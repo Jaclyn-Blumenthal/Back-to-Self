@@ -1,0 +1,81 @@
+<<<<<<< HEAD
+=======
+.nav {
+  list-style-type:none;
+  margin: 15px;
+  padding: 0;
+  overflow: hidden;
+  display:flex;
+  direction:row;
+  justify-content:space-between;
+  background-color: rgb(206, 169, 255);
+  color: blue;
+  padding:15px;
+  font-weight: bold;
+  
+}
+.shelter{
+  margin-right:15px;
+  margin-left:15px;
+  
+}
+.job{
+  margin-left:15px;
+  margin-right: 15px;
+}
+
+.edu{
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.health{
+  margin-left:15px;
+  margin-right:15px;
+}
+.body { grid-area: body; }
+.footer { grid-area: footer; }
+
+.grid-container {
+display: flex;
+justify-content: flex-end;
+
+grid-template-areas:
+  'nav'
+  'body'
+  'footer';
+gap: 10px;
+padding: 10px;
+text-align: center;
+padding: 0px 0px;
+font-size: 30px;
+}
+
+.grid-container > div {
+
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+}
+
+.body {
+  text-align: center;
+  width: 100% ;
+  margin-top: 100;
+  margin-bottom: 100;
+  position: fixed;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  margin-top: 300;
+  margin-bottom: 200;
+  position: fixed;
+}
+body {
+  margin-left: 10;
+  margin-right: 0%;
+}
+>>>>>>> 85538954731f2c5b406baf778b0a8f623ab57ae2
