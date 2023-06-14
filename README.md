@@ -52,6 +52,11 @@ CSS page -
   blue or purplish
   
   volunteer buttons can be red / orange
+
+
+  Hello Group 1,
+
+Great work on your final project. Your code is very clean and well laid out making it easy to read and to navigate. Your style is consistent throughout your pages which makes the site easy to navigate. Your nav bar is consistent on each page and all links work. Your use of tables, grid containers, forms and media queries was well executed
   
   
   

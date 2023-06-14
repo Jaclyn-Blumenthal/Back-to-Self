@@ -1,81 +1,266 @@
-<<<<<<< HEAD
-=======
+ /* Common styles for all pages */
 .nav {
-  list-style-type:none;
+  list-style-type: none;
   margin: 15px;
   padding: 0;
   overflow: hidden;
-  display:flex;
-  direction:row;
-  justify-content:space-between;
+  display: flex;
+  direction: row;
+  justify-content: space-between;
   background-color: rgb(206, 169, 255);
   color: blue;
-  padding:15px;
+  padding: 15px;
   font-weight: bold;
-  
-}
-.shelter{
-  margin-right:15px;
-  margin-left:15px;
-  
-}
-.job{
-  margin-left:15px;
-  margin-right: 15px;
-}
-
-.edu{
-  margin-left:15px;
-  margin-right:15px;
-}
-
-.health{
-  margin-left:15px;
-  margin-right:15px;
-}
-.body { grid-area: body; }
-.footer { grid-area: footer; }
-
-.grid-container {
-display: flex;
-justify-content: flex-end;
-
-grid-template-areas:
-  'nav'
-  'body'
-  'footer';
-gap: 10px;
-padding: 10px;
-text-align: center;
-padding: 0px 0px;
-font-size: 30px;
-}
-
-.grid-container > div {
-
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .navbar {
-  width: 100%;
-  position: fixed;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.body {
-  text-align: center;
-  width: 100% ;
-  margin-top: 100;
-  margin-bottom: 100;
-  position: fixed;
+.home {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 25px;
 }
 
-.footer {
-  text-align: center;
-  width: 100%;
-  margin-top: 300;
-  margin-bottom: 200;
-  position: fixed;
+.shelter {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.job {
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 60px;
+}
+
+.edu {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.health {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 0px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: flex-end;
+  grid-template-areas: 'nav';
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+  padding: 0px 0px;
+  font-size: 30px;
+  grid-auto-rows: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+}
+
+.navbar {
+  float: center;
+  display: block;
+  width: 100%;
+}
+
 body {
-  margin-left: 10;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url('anaimgs/transparent.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(97, 72, 24);
 }
->>>>>>> 85538954731f2c5b406baf778b0a8f623ab57ae2
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+  font-size: larger;
+}
+
+.list {
+  font-size: larger;
+}
+/* georges page*/
+.Unemployment{
+  justify-content: right;
+  font-size: larger
+}
+.Unemployment table {
+  padding: 15px;
+}
+.Unemployment td,tr {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.Benefits{
+  font-size: larger;    
+}
+.Benefits table {
+  padding: 15px;
+}
+.Benefits td,tr {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.Vet{
+  font-size: larger;  
+}
+.Vet table {
+  padding: 15px;
+}
+.Vet td,tr {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.Jobby{
+  justify-content: right;
+  
+}
+.Jobby ul{
+  font-size: larger;  
+}
+.Jobby table {
+  padding: 15px;
+}
+.Jobby td,tr {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.popchop{
+  display: flex;
+  justify-content: right;
+}
+.forms{
+  justify-content: center;
+}
+
+/* anas page*/
+.forms table{
+  padding: 25%;
+  font-size: larger;
+}
+/* Keep the buttons at the desired height and width */
+.forms .button-cell img {
+ width: 300px;
+ height: 75px;
+}
+ .tables{
+     text-align: center;
+     padding-left: 30%;
+ }
+ .tables2{
+     text-align: center;
+     padding-left: 10%;
+     padding-right: 20%;
+ }
+ .tables2 img {
+      height: 200px;
+      width: 200px;
+}
+/* Media queries for responsiveness */
+
+/* For screens up to 600px */
+/* For screens up to 600px */
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home, .shelter, .job, .edu, .health {
+    margin: 10px;
+  }
+
+  .grid-container {
+    display: flex;
+    justify-content: center; /* Updated to center the grid container */
+    align-items: center; /* Added to center the grid container */
+    font-size: 24px;
+  }
+
+  .Unemployment, .Benefits, .Vet, .Jobby, .popchop, .forms {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Unemployment table, .Benefits table, .Vet table, .Jobby table, .forms table {
+    padding: 10%;
+  }
+
+  .tables, .tables2 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+    /* Add the following CSS rule to ensure the navigation bar is fully visible */
+    .navbar {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+     /* Prevent photos inside tables from overflowing */
+     table img {
+      height: 200px;
+      width: 200px;
+    }
+    .tables2 img {
+      height: 100px;
+      width: 125px;
+    }
+   /* Keep the buttons at the desired height and width */
+   .forms .button-cell img {
+    width: 300px;
+    height: 75px;
+  }
+}
+
+
+/* For screens between 601px and 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .home, .shelter, .job, .edu, .health {
+    margin: 15px;
+  }
+
+  .grid-container {
+    font-size: 28px;
+  }
+  .navbar {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+   /* Prevent photos inside tables from overflowing */
+   table img {
+    height: 200px;
+    width: 200px;
+  }
+  .tables2 img {
+    height: 100px;
+    width: 125px;
+  }
+   /* Keep the buttons at the desired height and width */
+   .forms .button-cell img {
+    width: 300px;
+    height: 75px;
+  }
+}
+
+/* For screens larger than 1024px */
+@media only screen and (min-width: 1025px) {
+  /* No changes needed for this breakpoint */
+}
